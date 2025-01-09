@@ -1,6 +1,5 @@
 {
     "name": "sioweb/contao-element-group",
-    "version": "dev-main",
     "description": "Grouping elements",
     "license": "LGPL-3.0-or-later",
     "type": "contao-bundle",
@@ -22,34 +21,5 @@
         "psr-4": {
             "Sioweb\\ElementGroup\\": "src/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Sioweb\\ElementGroup\\Tests\\": "tests/"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "bamarni/composer-bin-plugin": true,
-            "contao-components/installer": true,
-            "contao/manager-plugin": true
-        }
-    },
-    "extra": {
-        "bamarni-bin": {
-            "bin-links": false,
-            "target-directory": "tools"
-        },
-        "contao-manager-plugin": "Sioweb\\ElementGroup\\ContaoManager\\Plugin"
-    },
-    "scripts": {
-        "all": [
-            "@unit-tests",
-            "@ecs",
-            "@phpstan"
-        ],
-        "ecs": "@php tools/ecs/vendor/bin/ecs check src tests --config ecs.php --fix --ansi",
-        "phpstan": "@php tools/phpstan/vendor/bin/phpstan analyze --ansi",
-        "unit-tests": "@php vendor/bin/phpunit --colors=always"
     }
 }
