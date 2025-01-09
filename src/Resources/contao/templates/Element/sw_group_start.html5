@@ -1,0 +1,5 @@
+<?php if (!empty($GLOBALS['ce_swGroupStart'])): ?>
+</section>
+<?php endif;?><?php
+	$GLOBALS['ce_swGroupStart'] = true;
+?><section class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>

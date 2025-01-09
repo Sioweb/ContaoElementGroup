@@ -1,0 +1,5 @@
+services:
+    sioweb.elements.group.listener.initializeSystem:
+        class: Sioweb\ElementGroup\EventListener\System
+        tags:
+            - { name: contao.hook, hook: initializeSystem, priority: -256 }
