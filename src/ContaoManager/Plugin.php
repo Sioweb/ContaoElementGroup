@@ -20,7 +20,7 @@ use Sioweb\ElementGroup\SiowebElementGroup;
 
 class Plugin implements BundlePluginInterface
 {
-    public function getBundles(ParserInterface $parser): array
+    public function getBundles(ParserInterface $parser)
     {
         return [
             BundleConfig::create(SiowebElementGroup::class)
